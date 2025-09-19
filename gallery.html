@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    }
+    .caption {
+      text-align: center;
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Web Gallery</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="gallery">
+      <div>
+        <img src="images/browser.jpg" alt="Web Browser" />
+        <div class="caption">Popular Web Browser</div>
+      </div>
+      <div>
+        <img src="images/webcode.jpg" alt="Web Code" />
+        <div class="caption">HTML and CSS Code</div>
+      </div>
+      <div>
+        <img src="images/internet.jpg" alt="Internet Network" />
+        <div class="caption">Internet Network</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
